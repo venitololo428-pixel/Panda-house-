@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-panda-red: #8B0000;
+  --color-panda-gold: #D4AF37;
+  --color-panda-black: #1A1A1A;
+  --color-panda-cream: #FDFBF7;
+}
+
+@layer base {
+  body {
+    @apply bg-panda-cream text-panda-black font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.panda-gradient {
+  background: linear-gradient(135deg, var(--color-panda-red) 0%, #4A0000 100%);
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20;
+}
+

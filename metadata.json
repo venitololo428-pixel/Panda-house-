@@ -1,0 +1,5 @@
+{
+  "name": "Panda House 🐼",
+  "description": "Restaurante de comida asiática moderna en Panamá. Menú, ubicación y reservas.",
+  "requestFramePermissions": ["geolocation"]
+}
